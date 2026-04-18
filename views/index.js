@@ -2,47 +2,14 @@
 const state = { todos: [], filter: "all" };
 
 const api = {
-  // Will only be done here
-  list: () =>
-    fetch("/todos").then(async (r) => {
-      if (!r.ok) {
-        const body = await r.json().catch(() => null);
-        throw new Error(body?.error || body?.message || "Failed to load");
-      }
-      return r.json();
-    }),
-  create: (task) =>
-    fetch("/todos", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ task }),
-    }).then(async (r) => {
-      if (!r.ok) {
-        const body = await r.json().catch(() => null);
-        throw new Error(body?.error || body?.message || "Create failed");
-      }
-      return r.json();
-    }),
-  update: (id, body) =>
-    fetch(`/todos/${id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    }).then(async (r) => {
-      if (!r.ok) {
-        const body = await r.json().catch(() => null);
-        throw new Error(body?.error || body?.message || "Update failed");
-      }
-      return r.json();
-    }),
-  remove: (id) =>
-    fetch(`/todos/${id}`, { method: "DELETE" }).then(async (r) => {
-      if (!r.ok) {
-        const body = await r.json().catch(() => null);
-        throw new Error(body?.error || body?.message || "Delete failed");
-      }
-      return r.json();
-    }),
+  // list todo api
+  list: () => {},
+  // create todo api
+  create: () => {},
+  // update todo api
+  update: () => {},
+  // delete todo api
+  delete: () => {},
 };
 
 const qs = (s, root = document) => root.querySelector(s);
@@ -136,8 +103,8 @@ function makeItem(todo) {
     input.focus();
     input.select();
     const save = async () => {
-      const val = input.value.trim();
-      if (!val || val === todo.task) {
+      const val = input.value;
+      if (val === todo.task) {
         left.replaceChild(text, input);
         return;
       }
