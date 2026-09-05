@@ -1,10 +1,16 @@
 # Express StudyJam: Routes, Views & Todo App
 
+[![Status: Teaching](https://img.shields.io/badge/Status-Teaching-blue)](docs/state.md)
+[![Stack: Express](https://img.shields.io/badge/Stack-Express-black)](#about)
+[![FMD philosophy: 1.31.0](https://img.shields.io/badge/FMD%20philosophy-1.31.0-blue)](AGENTS.md)
+
+
 This repository contains the materials used in a StudyJam that demonstrates how a small Express backend can serve a vanilla JavaScript front-end. The project is a compact Todo application used to teach routing, CRUD operations, and DOM-driven UI updates.
 
 ## Table of Contents
 
 - [About](#about)
+- [Start here](#start-here)
 - [Repository structure](#repository-structure)
 - [Technologies](#technologies)
 - [Quick start](#quick-start)
@@ -19,6 +25,12 @@ This repository contains the materials used in a StudyJam that demonstrates how 
 ## About
 
 Use this repo if you want a minimal, hands-on example of Express routes connected to a front-end without frameworks. It contains the server entry, route handlers, and the `views` folder that holds the client app.
+
+## Start here
+
+- **Humans:** this README, then [docs/state.md](docs/state.md)
+- **Agents:** [AGENTS.md](AGENTS.md) (state → index → FLAGS)
+- **Contributors:** table below
 
 ## Repository structure
 
@@ -104,8 +116,10 @@ Happy coding!
 
 ## Contributors
 
-This project is made possible by the GDG PUP community:
+This project is made possible by the GDG PUP community.
 
-| Role | Name |
-| --- | --- |
-| Development | [Keith Justine A. Virgenes](https://www.linkedin.com/in/keith-justine-virgenes-749225302) - Backend Developer / QA |
+| Name | Role | GitHub |
+| --- | --- | --- |
+| [Carlos Jerico Dela Torre](https://www.linkedin.com/in/delatorrecj) | Chief Technology Officer (2025-2026) | [@delatorrecj](https://github.com/delatorrecj) |
+| [Keith Justine A. Virgenes](https://www.linkedin.com/in/keith-justine-virgenes-749225302) | Backend Developer / QA | [@jhonkeithman123](https://github.com/jhonkeithman123) |
+
